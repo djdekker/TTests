@@ -144,9 +144,6 @@ TTestPairedSamples <- function(jaspResults, dataset = NULL, options, ...) {
   ttestNormalTable$addColumnInfo(name = "W",   type = "number", title = gettext("W"))
   ttestNormalTable$addColumnInfo(name = "p",   type = "pvalue", title = gettext("p"))
   
-  message <- gettext("Significant results suggest a deviation from normality.")
-  ttestNormalTable$addFootnote(message)
-  
   container[["ttestNormalTable"]] <- ttestNormalTable
   
   if (ready)
